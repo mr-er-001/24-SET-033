@@ -1,2 +1,33 @@
 Console.WriteLine("Muhammad Ehsan");
 Console.WriteLine("24-SET-033");
+using System;
+using System.Collections.Generic;
+
+namespace SemesterSubjectsApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> firstSemesterSubjects = new List<string>()
+            {
+                "English-I",
+                "Islamic Studies / Ethics",
+                "Introduction to Computing",
+                "Programming Fundamentals",
+                "Applied Physics",
+                "Mathematics-I"
+            };
+
+            Console.WriteLine("1st Semester Subjects for ICS (Physics Group):\n");
+
+            foreach (string subject in firstSemesterSubjects)
+            {
+                Console.WriteLine("- " + subject);
+            }
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}
