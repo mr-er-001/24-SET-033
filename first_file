@@ -1,3 +1,4 @@
+Console.WriteLine("Name, Roll no, FSC subjects, 1st semester subjects, 2nd semester subjects");
 Console.WriteLine("Muhammad Ehsan");
 Console.WriteLine("24-SET-033");
 using System;
