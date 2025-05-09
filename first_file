@@ -1,2 +1,39 @@
 Console.WriteLine("Muhammad Ehsan");
 Console.WriteLine("24-SET-033");
+using System;
+using System.Collections.Generic;
+
+namespace FSCSubjectsApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> subjects = new List<string>();
+
+            Console.WriteLine("Enter your FSc ICS (Physics) subjects one by one.");
+            Console.WriteLine("Type 'done' when finished.\n");
+
+            while (true)
+            {
+                Console.Write("Enter subject: ");
+                string input = Console.ReadLine();
+
+                if (input.ToLower() == "done")
+                    break;
+
+                subjects.Add(input);
+            }
+
+            Console.WriteLine("\nYour Entered Subjects are:\n");
+
+            foreach (string subject in subjects)
+            {
+                Console.WriteLine("- " + subject);
+            }
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}
