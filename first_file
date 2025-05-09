@@ -3,12 +3,17 @@ Console.WriteLine("24-SET-033");
 using System;
 using System.Collections.Generic;
 
+ 1st_semester
 namespace SemesterSubjectsApp
+
+namespace FSCSubjectsApp
+ fsc_subjects
 {
     class Program
     {
         static void Main(string[] args)
         {
+ 1st_semester
  2nd_semester
             List<string> secondSemesterSubjects = new List<string>()
             {
@@ -38,6 +43,27 @@ namespace SemesterSubjectsApp
 
             foreach (string subject in firstSemesterSubjects)
  1st_semester
+
+            List<string> subjects = new List<string>();
+
+            Console.WriteLine("Enter your FSc ICS (Physics) subjects one by one.");
+            Console.WriteLine("Type 'done' when finished.\n");
+
+            while (true)
+            {
+                Console.Write("Enter subject: ");
+                string input = Console.ReadLine();
+
+                if (input.ToLower() == "done")
+                    break;
+
+                subjects.Add(input);
+            }
+
+            Console.WriteLine("\nYour Entered Subjects are:\n");
+
+            foreach (string subject in subjects)
+ fsc_subjects
             {
                 Console.WriteLine("- " + subject);
             }
