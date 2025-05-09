@@ -1,2 +1,75 @@
 Console.WriteLine("Muhammad Ehsan");
 Console.WriteLine("24-SET-033");
+using System;
+using System.Collections.Generic;
+
+ 1st_semester
+namespace SemesterSubjectsApp
+
+namespace FSCSubjectsApp
+ fsc_subjects
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 1st_semester
+ 2nd_semester
+            List<string> secondSemesterSubjects = new List<string>()
+            {
+                "English-II",
+                "Pakistan Studies",
+                "Object-Oriented Programming",
+                "Database Systems",
+                "Waves and Oscillation (Physics)",
+                "Mathematics-II"
+            };
+
+            Console.WriteLine("2nd Semester Subjects for ICS (Physics Group):\n");
+
+            foreach (string subject in secondSemesterSubjects)
+
+            List<string> firstSemesterSubjects = new List<string>()
+            {
+                "English-I",
+                "Islamic Studies / Ethics",
+                "Introduction to Computing",
+                "Programming Fundamentals",
+                "Applied Physics",
+                "Mathematics-I"
+            };
+
+            Console.WriteLine("1st Semester Subjects for ICS (Physics Group):\n");
+
+            foreach (string subject in firstSemesterSubjects)
+ 1st_semester
+
+            List<string> subjects = new List<string>();
+
+            Console.WriteLine("Enter your FSc ICS (Physics) subjects one by one.");
+            Console.WriteLine("Type 'done' when finished.\n");
+
+            while (true)
+            {
+                Console.Write("Enter subject: ");
+                string input = Console.ReadLine();
+
+                if (input.ToLower() == "done")
+                    break;
+
+                subjects.Add(input);
+            }
+
+            Console.WriteLine("\nYour Entered Subjects are:\n");
+
+            foreach (string subject in subjects)
+ fsc_subjects
+            {
+                Console.WriteLine("- " + subject);
+            }
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}
