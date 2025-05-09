@@ -9,6 +9,21 @@ namespace SemesterSubjectsApp
     {
         static void Main(string[] args)
         {
+ 2nd_semester
+            List<string> secondSemesterSubjects = new List<string>()
+            {
+                "English-II",
+                "Pakistan Studies",
+                "Object-Oriented Programming",
+                "Database Systems",
+                "Waves and Oscillation (Physics)",
+                "Mathematics-II"
+            };
+
+            Console.WriteLine("2nd Semester Subjects for ICS (Physics Group):\n");
+
+            foreach (string subject in secondSemesterSubjects)
+
             List<string> firstSemesterSubjects = new List<string>()
             {
                 "English-I",
@@ -22,6 +37,7 @@ namespace SemesterSubjectsApp
             Console.WriteLine("1st Semester Subjects for ICS (Physics Group):\n");
 
             foreach (string subject in firstSemesterSubjects)
+ 1st_semester
             {
                 Console.WriteLine("- " + subject);
             }
